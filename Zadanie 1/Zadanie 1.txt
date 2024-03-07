@@ -1,0 +1,1 @@
+Prosty kalkulator kredytowy, który oblicza ratę miesięczną na "sztywno".
