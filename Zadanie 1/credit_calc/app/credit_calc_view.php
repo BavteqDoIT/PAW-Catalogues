@@ -7,6 +7,10 @@
     <title>Credit Calculator</title>
 </head>
 <style>
+    input[type="text"]{
+        margin-bottom: 5px;
+    }
+    
     ol  {
         margin : 20px;
         padding : 10px 10px 10px 30px;
@@ -36,7 +40,7 @@
 
     <?php
     if(isset($messages)) {
-        if( count($messages) > 0) {
+        if(count($messages) > 0) {
             echo '<ol>';
             foreach($messages as $key => $msg) {
                 echo'<li>'.$msg.'</li>';

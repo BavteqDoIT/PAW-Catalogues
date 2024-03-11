@@ -10,13 +10,13 @@ if (!(isset($y) && isset($c) && isset($p))) {
 }
 
 if ($y == "") {
-    $messages = 'Nie podano okresu kredytowania';
+    $messages [] = 'Nie podano okresu kredytowania';
 }
 if ($c == "") {
-    $messages = 'Nie podano kwoty kredytu';
+    $messages [] = 'Nie podano kwoty kredytu';
 }
 if ($p == "") {
-    $messages = 'Nie podano oprocentowania kredytu';
+    $messages [] = 'Nie podano oprocentowania kredytu';
 }
 
 if (empty($messages)) {
