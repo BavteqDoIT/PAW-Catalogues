@@ -1,0 +1,4 @@
+Prosty kalkulator kredytowy, który oblicza ratę miesięczną na "sztywno".
+Dodany admin i user.
+Zmieniłem nazwy zmiennych
+Dodałem style kaskadowe
