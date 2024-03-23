@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<?php out($page_description); if (!isset($page_description)){ ?> Opis domyślny ... <?php } ?>">
+    <meta name="description" content="{$page_description|default:'Opis domyślny'}">
     <title>{$page_title|default:"Tytuł domyślny"}</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <link rel="stylesheet" href="{$app_url}/css/style.css">

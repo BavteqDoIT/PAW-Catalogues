@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.1, created on 2024-03-23 23:07:48
+/* Smarty version 4.5.1, created on 2024-03-23 23:16:34
   from 'C:\xampp\htdocs\Zadanie_3\credit_calc\app\credit_calc.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.1',
-  'unifunc' => 'content_65ff52b4b00a53_28385727',
+  'unifunc' => 'content_65ff54c20aa108_51264977',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b496b6060a8c75f470b3d91f59cd4e8972b7fd3f' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Zadanie_3\\credit_calc\\app\\credit_calc.tpl',
-      1 => 1711231598,
+      1 => 1711232035,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_65ff52b4b00a53_28385727 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65ff54c20aa108_51264977 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ob_start();
@@ -29,24 +29,24 @@ echo $_prefixVariable1;?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_82922624165ff52b4af05a8_54663470', 'footer');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_208031264965ff54c209bc21_29663315', 'footer');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_81449348465ff52b4af1078_88684618', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_110616778265ff54c209c5a7_85436748', 'content');
 ?>
 
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "../templates/main.tpl");
 }
 /* {block 'footer'} */
-class Block_82922624165ff52b4af05a8_54663470 extends Smarty_Internal_Block
+class Block_208031264965ff54c209bc21_29663315 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'footer' => 
   array (
-    0 => 'Block_82922624165ff52b4af05a8_54663470',
+    0 => 'Block_208031264965ff54c209bc21_29663315',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -56,12 +56,12 @@ przykładowa treść stopki wpisana do szablonu głównego z szablonu kalkulator
 }
 /* {/block 'footer'} */
 /* {block 'content'} */
-class Block_81449348465ff52b4af1078_88684618 extends Smarty_Internal_Block
+class Block_110616778265ff54c209c5a7_85436748 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_81449348465ff52b4af1078_88684618',
+    0 => 'Block_110616778265ff54c209c5a7_85436748',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -91,7 +91,6 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\Zadanie_3
 
     <div class="messages">
 
-    
     <?php if ((isset($_smarty_tpl->tpl_vars['messages']->value))) {?>
         <?php if (smarty_modifier_count($_smarty_tpl->tpl_vars['messages']->value) > 0) {?>
             <h4>Wystąpiły błędy: </h4>
