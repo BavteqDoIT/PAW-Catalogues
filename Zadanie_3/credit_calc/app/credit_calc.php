@@ -70,9 +70,7 @@ $smarty = new Smarty();
 
 $smarty->assign('app_url',_APP_URL);
 $smarty->assign('root_path',_ROOT_PATH);
-$smarty->assign('page_title','Credit Calculator');
-$smarty->assign('page_description','Profesjonalne szablonowanie oparte na bibliotece Smarty');
-$smarty->assign('page_header','Szablony Smarty');
+$smarty->assign('page_title','Kalkulator kredytur');
 
 $smarty->assign('form',$form);
 $smarty->assign('result',$result);

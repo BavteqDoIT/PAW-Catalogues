@@ -5,30 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{$page_description|default:'Opis domyślny'}">
     <title>{$page_title|default:"Tytuł domyślny"}</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-    <link rel="stylesheet" href="{$app_url}/css/style.css">
+    <link rel="stylesheet" href="{$app_url}/assets/css/main.css">
+    <link rel="icon" type="image" href="https://cdn.pixabay.com/photo/2023/03/06/04/26/calculator-7832583_1280.png">
 </head>
 <body>
 
-<div class="header">
-    <h1>{$page_title|default:"Tytuł domyślny"}</h1>
-    <h1>{$page_header|default:"Tytuł domyślny"}</h1>
-    <p>
-        {$page_description|default:"Opis domyślny"}
-    </p>
+<div id = "wrapper">
+
+    <div id = "main">
+        <div class = "inner">
+            {block name=header} Domyślna treść headera {/block}
+            {block name = beforeContent} Domyślna treść {{/block}}
+            {block name=content} Domyślna treść zawartości {/block}
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <div class = "inner">
+
+                <div class= "menu">
+                {block name=menu}
+                    Domyślna zawartości menu
+                {/block}
+                </div>
+
+                <div class= "miniPost">
+                {block name=miniPost}
+                    Domyślna zawartości mini-postow
+                {/block}
+                </div>
+                
+                <div class= "kontakt">
+                {block name=kontakt}
+                    Domyślna zawartość kontaktu
+                {/block}
+                </div>
+
+                {block name=footer} Domyślna treść stopki {/block}
+        </div>
+    </div>
 </div>
 
-<div class = "content">
-{block name=content} Domyślna treść zawartości {/block}
-</div><!-- content -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
-<div class="footer">
-    <p>
-{block name=name} Domyślna treść stopki {/block}
-    </p>
-    <p>
-        Widok oparty na stylach <a href="http://purecss.io/" target="_blank">Pure CSS Yahoo!</a> (autor Bartosz Adamek)
-    </p>
-</div>
 </body>
 </html>
