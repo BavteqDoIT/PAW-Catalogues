@@ -15,7 +15,7 @@
     <div id = "main">
         <div class = "inner">
             {block name=header} Domyślna treść headera {/block}
-            {block name = beforeContent} Domyślna treść {{/block}}
+            {block name=beforeContent} Domyślna treść {/block}
             {block name=content} Domyślna treść zawartości {/block}
         </div>
     </div>
