@@ -50,7 +50,6 @@ class CalcCtrl {
 			if (!is_numeric ( $this->form->percent )) {
 				getMessages()->addError('Oprocentowanie kredytu nie jest liczbą rzeczywistą');
 			}
-                        
 		}
 		
 		return ! getMessages()->isError();
@@ -58,7 +57,7 @@ class CalcCtrl {
 	
 	public function action_calcCompute(){
 
-		$this->getparams();
+		$this->getParams();
 		
 		if ($this->validate()) {
 				
@@ -67,7 +66,7 @@ class CalcCtrl {
 			$this->form->percent = floatval($this->form->percent);
 			getMessages()->addInfo('Parametry poprawne.');
 				
-			if($cost > 750000 || $percent < 3.5){
+			if($this->form->cost > 750000 || $this->form->percent < 3.5){
                             if (inRole('admin')){
                                 $this->result->result = ($this->form->cost * (1 + ($this->form->percent / 100))) / ($this->form->years * 12);   
                             } else {

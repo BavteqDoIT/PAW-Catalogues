@@ -23,7 +23,6 @@ class LoginCtrl{
 		// sprawdzenie, czy parametry zostały przekazane
 		if (! (isset ( $this->form->login ) && isset ( $this->form->pass ))) {
 			// sytuacja wystąpi kiedy np. kontroler zostanie wywołany bezpośrednio - nie z formularza
-                        getMessages()->addError ( 'Błąd tu' );
 			return false;
 		}
 			

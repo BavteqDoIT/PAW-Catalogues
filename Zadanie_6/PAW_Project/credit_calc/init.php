@@ -4,14 +4,16 @@ require_once 'core/Config.class.php';
 $conf = new core\Config();
 require_once 'config.php';
 
-function &getConf(){ global $conf; return $conf; }
-
+function &getConf(){
+     global $conf; return $conf; 
+     }
 
 require_once 'core/Messages.class.php';
 $msgs = new core\Messages();
 
-function &getMessages(){ global $msgs; return $msgs; }
-
+function &getMessages(){
+     global $msgs; return $msgs;
+      }
 
 $smarty = null;	
 function &getSmarty(){
